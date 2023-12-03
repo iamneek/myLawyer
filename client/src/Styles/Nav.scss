@@ -9,7 +9,7 @@
     ul{
         display: flex;
         gap: 3em;
-        margin-left: 4em;
+        margin-left: 10%;
     }
     a{
         text-decoration: none;
@@ -74,7 +74,7 @@
         position: absolute;
         width: 1em;
         height: .16em;
-        background-color: #37996b;
+        background-color: #33ad5a;
         border-radius: 1em;
         bottom: -.5em;
         left: 50%;
@@ -119,12 +119,12 @@
     justify-content: center;
     gap: 1em;
     .free_cta{
-        background-color: #33ae75;
+        background-color: #33ad5a;
         padding: .8em;
         border-radius: .5em;
         font-weight: 600;
         &:hover{
-            background-color: #2db575;
+            background-image: linear-gradient(270deg,hsl(136, 56%, 40%) 0%,hrgb(72, 206, 110)11%,hsrgb(68, 220, 116)2%,hsl(140deg 52% 47%) 33%,hsl(142deg 50% 50%) 44%,hsl(143, 64%, 34%) 56%,hsl(145, 58%, 35%) 67%,hsl(146, 59%, 40%)78%,hsl(148, 80%, 29%) 89%,hsl(149, 62%, 34%) 100%);
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }

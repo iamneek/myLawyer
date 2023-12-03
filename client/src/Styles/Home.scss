@@ -1,4 +1,81 @@
 .Home{
-    // background-color: aqua;
-    // width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero_section{
+
+        margin-top: 10%;
+    .hero_title{
+
+        color: #f5f5f5;
+        font-family: Montserrat;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 700;
+        
+    }
+    .hero_gradient{
+        background-image: linear-gradient(270deg,hsl(136deg 62% 37%) 0%,hsl(137deg 58% 40%) 11%,hsl(139deg 54% 44%) 22%,hsl(140deg 52% 47%) 33%,hsl(142deg 50% 50%) 44%,hsl(143deg 55% 54%) 56%,hsl(145deg 61% 57%) 67%,hsl(146deg 68% 60%) 78%,hsl(148deg 76% 64%) 89%,hsl(149deg 86% 67%) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+    }
+    .hero_para1{
+        text-align: center;
+        color: #f1f1f1;
+        font-family: Nunito;
+        margin-top: 1em;
+        font-size: large;
+    }
+    .hero_para2{
+        text-align: center;
+        color: rgb(112, 121, 148);
+        font-family: Nunito;
+        margin-top: 1em;
+        font-size: small;
+    }
+    .asterisk{
+        color: tomato;
+        font-size: small;
+    }
+    .input_cta{
+        margin-top: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        .cta_input{
+            background-color: #f5f5f5;
+            border: none;
+            padding: 1em;
+            width: 20em;
+            border-radius: .3em;
+            outline: none;
+            font-family: Nunito;
+            font-weight: 600;
+            font-size: 16px;
+            &:focus{
+
+                outline: 1.5px solid #249943;}
+;
+        }
+        .input_cta_button{
+            border-radius: .3em;
+            border: none;
+            background-color: #33ad5a;
+            padding: 1em;
+            font-size: 16px;
+            font-family: Montserrat;
+            cursor: pointer;
+            font-weight: 600;
+            color: #f5f5f5;
+            &:hover{
+                background-color: #32b55b;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            }
+        }
+    }
 }
