@@ -1,5 +1,4 @@
 .hero_pic{
-    // background-color: #263238;
     margin-top: 10em;
     width: 80%;
     height: max-content;
@@ -28,9 +27,9 @@
         gap: .5em;
         font-family: Nunito;
         margin-inline: auto;
-        font-weight: 700;
+        font-weight: 800;
         span{
-            color: #4f4e4e;
+            color: #6e6c70;
         }
     }
     .hero_mac_btns{
@@ -71,10 +70,13 @@
 
     }
 }
-.video_container{
+.video_container_hero{
     width: 100%;
     height: 100%;
     min-width: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
     video{
         outline: none;
         width: 100%;
@@ -83,5 +85,87 @@
         border-bottom-right-radius: .5em;
     }
 }
+.video_controls_hero{
+    position: absolute;
+    width: 45%;
+    height: 5.5rem;
+    bottom: 4.5em;
+    background: rgba(103, 102, 105, 0.75);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur(10px );
+    border-radius: .6em;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: 250ms ease-in-out;
 
+    .play_pause_next_hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin-top: .4em;
+        .play_pause_hero{
+            cursor: pointer;
+        }
+        .video_backward_hero{
+            cursor: pointer;
+        }
+        .video_forward_hero{
+            cursor: pointer;
+        }
+    }
+    .timeline_duration_video_hero{
+        width: 75%;
+        border-radius: .45em;
+        height: .25em;
+        background: rgba(184, 178, 174, 0.55);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        cursor: pointer;
+        position: relative;
+
+        .timeline_indicator_video_hero{
+            width: calc(100% - var(--progress)*1000);
+            border-radius: .45em;
+            height: .25em;
+            background-color: #a6abbd;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            &::before{
+                content: "";
+                position: absolute;
+                height: 1.2em;
+                width: .2em;
+                border-radius: .3em;
+                background-color: #fdefe9;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.timing_and_duration{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fdefe9;
+    font-family: Noto Sans;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .6em;
+    margin-inline: auto;
+    gap: .5em;
+    user-select: none;
+}
+}
+
+.video_container_hero:hover .video_controls_hero{
+    display: flex;
 }

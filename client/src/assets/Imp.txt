@@ -1,0 +1,19 @@
+-- Mac OS like video player with custom controls --
+
+Minutes = Math.floor(Video Duration / 60);
+Seconds = Math.floor(video Duration - (Video Length in Minute * 60))
+
+e.currentTarget = returns element which is targeted ( event triggered )
+
+e.clientX = gave the X position of the mouse as our timeline is horizontal so we need to get the X position of mouse so that we can then
+make the progress bar reach to that point (so that the video goes forward or backwards )
+
+timeline.getBoundingClientRect().left = gives the position from the very left side to timeline to where ever in the timeline the user cicks
+
+timeline.offsetWidth = gives the width of the timeline
+
+video.currentTime = gives the current time of video 
+
+vid_ref.current = current element pointed by the vid_ref ref
+
+----------------------------------------------------
